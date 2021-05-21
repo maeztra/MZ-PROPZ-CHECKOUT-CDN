@@ -31,6 +31,7 @@ function sendToPropz(orderForm) {
                 customerId: orderForm.clientProfileData?.document
             },
             ticket: {
+                storeId: localStorage.getItem('@propz/store-id'),
                 ticketId: orderForm.orderFormId,
                 amount: 0,
                 date: (new Date()).toISOString(),
