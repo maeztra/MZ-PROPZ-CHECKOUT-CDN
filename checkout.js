@@ -31,7 +31,6 @@ function sendToPropz(orderForm) {
                 customerId: orderForm.clientProfileData?.document
             },
             ticket: {
-                storeId: "4455",
                 ticketId: orderForm.orderFormId,
                 amount: 0,
                 date: (new Date()).toISOString(),
